@@ -1,5 +1,6 @@
 Banking Application
-Java MySQL Swing
+
+
 
 A simple yet robust Banking Application designed using Core Java , Swing , AWT , and MySQL . This application allows users to perform essential banking operations such as creating accounts, depositing money, withdrawing cash, checking balances, generating mini-statements, and more.
 
