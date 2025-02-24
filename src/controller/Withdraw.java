@@ -146,13 +146,12 @@ public class Withdraw extends JFrame implements ActionListener {
                 }
 
                 // Process Withdrawal
-                repo.statement.executeUpdate("INSERT INTO bank VALUES('" + pin + "','" + date + "','Withdrawal','" + amount + "')");
-<<<<<<< HEAD
+
 
                 JOptionPane.showMessageDialog(null, "Rs. " + amount + " Debited Successfully"+"\n Available balance: Rs."+Balance.getBalance());
-=======
+
                 JOptionPane.showMessageDialog(null, "Rs. " + amount + " Debited Successfully");
->>>>>>> e43088d45a00a3650d9dd16f9a9e8bf645a7b6e7
+
 
                 setVisible(false);
                 new Transaction(pin);

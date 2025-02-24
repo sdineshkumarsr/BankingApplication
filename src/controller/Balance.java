@@ -9,11 +9,7 @@ import java.awt.event.ActionListener;
 import java.sql.ResultSet;
 
 public class Balance extends JFrame implements ActionListener {
-<<<<<<< HEAD
     static String pin;
-=======
-    String pin;
->>>>>>> e43088d45a00a3650d9dd16f9a9e8bf645a7b6e7
     JLabel label3;
     JButton backBtn;
     public Balance( String pin){
@@ -62,11 +58,7 @@ public class Balance extends JFrame implements ActionListener {
         setVisible(true);
     }
 
-<<<<<<< HEAD
     public static int getBalance() {
-=======
-    public int getBalance() {
->>>>>>> e43088d45a00a3650d9dd16f9a9e8bf645a7b6e7
         int balance = 0;
         try {
             RepoConnection repo = new RepoConnection();

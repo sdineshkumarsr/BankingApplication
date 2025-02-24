@@ -107,12 +107,8 @@ public class Deposit extends JFrame implements ActionListener {
             } else {
                 RepoConnection repo = new RepoConnection();
                 repo.statement.executeUpdate("INSERT INTO bank VALUES ('" + pin + "','" + date + "','Deposit','" + amount + "')");
-<<<<<<< HEAD
                 int balance=Balance.getBalance();
                 JOptionPane.showMessageDialog(null, "Rs. " + amount + " Deposited Successfully"+"\n Available Balance: Rs. "+balance);
-=======
-                JOptionPane.showMessageDialog(null, "Rs. " + amount + " Deposited Successfully");
->>>>>>> e43088d45a00a3650d9dd16f9a9e8bf645a7b6e7
 
                 setVisible(false);
                 dispose();
@@ -139,9 +135,6 @@ public class Deposit extends JFrame implements ActionListener {
 
     public static void main(String[] args) {
         new Deposit("");
-<<<<<<< HEAD
 
-=======
->>>>>>> e43088d45a00a3650d9dd16f9a9e8bf645a7b6e7
     }
 }
