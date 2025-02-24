@@ -99,19 +99,26 @@ public class Transaction extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         try{
+            //Deposit
             if(e.getSource()==b1){
                 new Deposit(pin);
                 setVisible(false);
-
+            //FastCash
             } else if (e.getSource()==b2) {
-
+                new FastCash(pin);
+                setVisible(false);
+            //PinChange
             } else if (e.getSource()==b3) {
+                new PinChange(pin);
+                setVisible(false);
 
             } else if (e.getSource()==b4) {
                 new Withdraw(pin);
                 setVisible(false);
-
+            //Mini Statement
             } else if (e.getSource()==b5) {
+                new Mini(pin);
+                setVisible(false);
 
             } else if (e.getSource()==b6) {
                 new Balance(pin);

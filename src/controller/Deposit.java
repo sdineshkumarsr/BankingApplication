@@ -107,8 +107,8 @@ public class Deposit extends JFrame implements ActionListener {
             } else {
                 RepoConnection repo = new RepoConnection();
                 repo.statement.executeUpdate("INSERT INTO bank VALUES ('" + pin + "','" + date + "','Deposit','" + amount + "')");
-                int balance=Balance.getBalance();
-                JOptionPane.showMessageDialog(null, "Rs. " + amount + " Deposited Successfully"+"\n Available Balance: Rs. "+balance);
+               // int balance=Balance.getBalance();
+                JOptionPane.showMessageDialog(null, "Rs. " + amount + " Deposited Successfully");
 
                 setVisible(false);
                 dispose();
