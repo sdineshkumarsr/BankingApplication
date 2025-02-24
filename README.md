@@ -26,3 +26,19 @@ A simple yet robust Banking Application designed using Core Java , Swing , AWT ,
   Swing & AWT : For designing the graphical user interface (GUI).
   MySQL : For storing user accounts, transaction history, and other data.
   JDBC : For connecting the Java application to the MySQL database.
+
+
+///////// MY SQL CODE//////////
+
+CREATE DATABASE MBBANK;
+
+CREATE TABLE IF NOT EXISTS REGISTRATION (form_no VARCHAR(30),f_name VARCHAR(30),l_name VARCHAR(30),father_name VARCHAR(30), DOB VARCHAR(30), gender VARCHAR(30), 
+											mail VARCHAR(60), address VARCHAR(100), marriage VARCHAR(30), city VARCHAR(30), state VARCHAR(30), pincode VARCHAR(30));
+
+CREATE TABLE IF NOT EXISTS REGISTRATIONTWO (form_no VARCHAR(30),religion VARCHAR(30),category VARCHAR(30),education VARCHAR(30),occupation VARCHAR(30), pan VARCHAR(30), aadhar VARCHAR(30));
+
+CREATE TABLE IF NOT EXISTS REGISTRATIONTHREE(form_no VARCHAR(30), ac_type varchar(50), card_no VARCHAR(20), pin VARCHAR(5), features VARCHAR(150));
+
+CREATE TABLE IF NOT EXISTS LOGIN(form_no VARCHAR(30), card_no VARCHAR(20), pin VARCHAR(5));
+
+CREATE TABLE IF NOT EXISTS bank(pin VARCHAR(5),date VARCHAR(50), type VARCHAR(50), amount int);
